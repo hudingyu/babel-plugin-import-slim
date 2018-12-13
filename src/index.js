@@ -1,1 +1,2 @@
-module.exports = require('./core')();
+import core from './core';
+module.exports = core();

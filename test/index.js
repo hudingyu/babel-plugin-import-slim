@@ -1,14 +1,15 @@
 const babel = require('babel-core');
 const types = require('babel-types');
 
-const beeuiPlugin = require('./../lib/index.js');
+const plugin = require('./../lib/index.js');
 
-const visitor = beeuiPlugin({types});
+const visitor = plugin({types});
 
 const code = `
     import { Select as BeeSelect, Pagination } from '@dp/bee-ui';
     import { DatePicker } from '@dp/bee-ui';
     import * as Bee from '@dp/bee-ui';
+    import lodash from 'lodash';
 `;
 
 const result = babel.transform(code, {

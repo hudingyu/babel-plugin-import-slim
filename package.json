@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-import-slim",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "babel plugin for demand import",
   "main": "lib/index.js",
   "scripts": {
