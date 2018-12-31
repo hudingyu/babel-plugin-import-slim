@@ -1,3 +1,7 @@
+[![GitHub issues](https://img.shields.io/github/issues/hudingyu/babel-plugin-import-slim.svg)](https://github.com/hudingyu/babel-plugin-import-slim/issues)
+[![GitHub forks](https://img.shields.io/github/forks/hudingyu/babel-plugin-import-slim.svg)](https://github.com/hudingyu/babel-plugin-import-slim/network)
+[![GitHub stars](https://img.shields.io/github/stars/hudingyu/babel-plugin-import-slim.svg)](https://github.com/hudingyu/babel-plugin-import-slim/stargazers)
+[![GitHub license](https://img.shields.io/github/license/hudingyu/babel-plugin-import-slim.svg)](https://github.com/hudingyu/babel-plugin-import-slim/blob/master/LICENSE)
 
 # babel-plugin-import-slim
 
@@ -7,7 +11,7 @@
 yarn add babel-plugin-import-slim --dev
 ```
 
-Via `.babelrc` or babel-loader.
+Via `.babelrc.js` or babel-loader.
 
 ```js
 {
@@ -75,4 +79,12 @@ import Pagination from '@dp/bee-ui/src/components/ui-base/pagination/pagination'
 import DatePicker from '@dp/bee-ui/src/components/ui-base/date-picker/date-picker';
 ```
 
+## Notes
 
+If you want to use this plugin via `.babelrc`, it should be configured in `.babelrc.js`.
+And `.babelrc` should be like this:
+```javascript
+{
+  "presets": ["./.babelrc.js"]
+}
+```
